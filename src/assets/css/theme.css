@@ -3,7 +3,7 @@
   --bright-blue: rgb(10, 153, 230);
   --light-blue: rgb(54, 94, 217);
   --dark-blue-30: rgba(54, 94, 217, 0.3);
-  --dark-blue-50: rgb(8, 23, 50);
+  --dark-blue-50: rgb(8, 22, 48);
   --dark-blue-60: rgb(0, 23, 60);
   --dark-blue-70: rgb(14, 37, 70);
   --gainsboro-50: rgba(217, 217, 217, 0.5);
@@ -23,11 +23,11 @@
     var(--light-blue) 100%
   );
 
-  --shadow-1: 4px 4px 15px var(--black_10);
-  --shadow-2: 0 10px 15px var(--black_10);
-  --shadow-3: 0px 20px 60px var(--black_8);
+  --shadow-1: 4px 4px 15px var(--black-10);
+  --shadow-2: 0 10px 15px var(--black-10);
+  --shadow-3: 0px 20px 60px var(--black-8);
   --shadow-4: 0px 10px 30px var(--dark-blue-30);
-  --shadow-5: 0px 2px 60px 0px var(--black_10);
+  --shadow-5: 0px 2px 60px 0px var(--black-10);
 
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
