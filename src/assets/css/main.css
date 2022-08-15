@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--white-1);
+  color: var(--dark-gray);
+  font-size: 1rem;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button {
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+input {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
