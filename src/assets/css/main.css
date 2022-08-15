@@ -62,3 +62,99 @@ img {
 address {
   font-style: normal;
 }
+
+.container {
+  padding-inline: 1.5rem;
+}
+
+.header-top,
+.header-bottom .btn {
+  display: none;
+}
+
+.header-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 1rem;
+  z-index: 2;
+}
+
+.header-bottom.active {
+  position: fixed;
+  top: -5rem;
+  animation: slide-in 0.5s var(--cubic-out) forwards;
+  background: var(--white-1);
+  box-shadow: var(--shadow-2);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.header-bottom > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.logo {
+  color: var(--dark-blue-50);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+}
+
+.nav-toggle-btn {
+  color: var(--black);
+  font-size: 2rem;
+  border: 1px solid var(--black);
+  padding: 0.3rem;
+}
+
+.nav-toggle-btn.active .open-menu,
+.nav-toggle-btn .close-menu {
+  display: none;
+}
+
+.nav-toggle-btn .open-menu,
+.nav-toggle-btn.active .close-menu {
+  display: block;
+}
+
+.navbar {
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  left: 1.5rem;
+  right: 1.5rem;
+  background: var(--white-1);
+  padding-inline: 0;
+  max-height: 0;
+  box-shadow: var(--shadow-1);
+  transition: 0.25s var(--cubic-out);
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.navbar.active {
+  visibility: visible;
+  max-height: fit-content;
+  transition-duration: 0.5s;
+}
+
+.navbar-list > li:not(:last-child) {
+  border-block-end: 1px solid var(--gainsboro-50);
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  color: var(--jet);
+  font-weight: 500;
+  padding: 1rem;
+}
