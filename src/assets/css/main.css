@@ -103,6 +103,10 @@ h3 {
   box-shadow: var(--shadow-4);
 }
 
+.text-center {
+  text-align: center;
+}
+
 .btn:is(:hover, :focus) {
   --deg: -90deg;
 }
@@ -217,6 +221,8 @@ h3 {
   padding: 1rem;
 }
 
+/* Hero */
+
 .hero {
   width: 100%;
   overflow: hidden;
@@ -266,4 +272,47 @@ h3 {
 
 .hero-form .btn {
   width: 100%;
+}
+
+/* Service */
+
+.service {
+  margin-block-end: 0;
+}
+
+.service-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.card-text {
+  line-height: 1.6;
+}
+
+.service .section-title {
+  margin-block-end: 3.1rem;
+}
+
+.service-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.service-card {
+  min-height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.service-card .card-icon {
+  width: 50px;
+  flex-shrink: 0;
+}
+
+.service-card .card-title {
+  margin-block-end: 8px;
 }
