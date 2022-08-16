@@ -14,7 +14,7 @@ html {
 
 body {
   background: var(--white-1);
-  color: var(--dark-gray);
+  color: var(--jet);
   font-size: 1rem;
 }
 
@@ -63,8 +63,65 @@ address {
   font-style: normal;
 }
 
+.h1,
+.h2,
+.h3 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+}
+
+.h1 {
+  color: var(--dark-blue-70);
+  font-size: 2.25rem;
+}
+
+.h2,
+.h3 {
+  color: var(--dark-blue-60);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+.btn {
+  background: linear-gradient(
+    var(--deg, 90deg),
+    var(--bright-blue) 0%,
+    var(--light-blue) 100%
+  );
+  color: var(--white-1);
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: var(--shadow-4);
+}
+
+.btn:is(:hover, :focus) {
+  --deg: -90deg;
+}
+
+.section {
+  padding-block: 7.5rem;
+}
+
 .container {
   padding-inline: 1.5rem;
+}
+
+.section-subtitle {
+  color: var(--light-blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-block-end: 10px;
 }
 
 .header-top,
@@ -79,6 +136,7 @@ address {
   width: 100%;
   padding-block: 1rem;
   z-index: 2;
+  background: var(--white-1);
 }
 
 .header-bottom.active {
@@ -157,4 +215,55 @@ address {
   color: var(--jet);
   font-weight: 500;
   padding: 1rem;
+}
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+  height: 800px;
+  background-size: cover !important;
+  background: linear-gradient(
+      -80deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(255, 255, 255, 0.9) 60%
+    ),
+    url('../img/hero-background.jpg') no-repeat center center scroll;
+  position: relative;
+  padding-block-end: calc(7.5rem / 2);
+}
+
+.hero-content {
+  margin-block-end: 1.85rem;
+}
+
+.hero-title {
+  margin-block: 1rem 2rem;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-block-end: 2.5rem;
+}
+
+.hero-form {
+  background: var(--white-1);
+  max-width: 95%;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow-3);
+}
+
+.hero-form .email-field {
+  min-height: 4.35rem;
+  background: var(--white-2);
+  color: var(--black);
+  padding-inline: 1rem;
+  border-radius: 4px;
+  margin-block-end: 1rem;
+}
+
+.hero-form .btn {
+  width: 100%;
 }
