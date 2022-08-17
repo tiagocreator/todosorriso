@@ -112,7 +112,7 @@ h3 {
 }
 
 .section {
-  padding-block: 7.5rem;
+  padding-block-start: 7.5rem;
 }
 
 .container {
@@ -234,7 +234,7 @@ h3 {
       rgba(0, 0, 0, 0) 0%,
       rgba(255, 255, 255, 0.9) 60%
     ),
-    url('../img/hero-background.jpg') no-repeat center center scroll;
+    url('../img/hero-background.webp') no-repeat center center scroll;
   position: relative;
   padding-block-end: calc(7.5rem / 2);
 }
@@ -285,7 +285,8 @@ h3 {
   height: 100%;
 }
 
-.card-text {
+.card-text,
+.section-text {
   line-height: 1.6;
 }
 
@@ -316,3 +317,25 @@ h3 {
 .service-card .card-title {
   margin-block-end: 8px;
 }
+
+/* About */
+
+.about .about-banner {
+  width: 100%;
+  background: var(--gradient) padding-box, var(--gradient) border-box;
+  border-radius: 4px;
+  border: 4px solid transparent;
+  margin-block-end: 2rem;
+}
+
+.about .section-text-1 {
+  margin-block: 1.55rem 1rem;
+}
+
+.about .btn {
+  font-size: unset;
+  max-width: max-content;
+  margin-block-start: 2rem;
+  padding-inline: 1rem;
+}
+
