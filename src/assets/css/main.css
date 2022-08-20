@@ -438,3 +438,137 @@ h3 {
 .mobile-slider::-webkit-scrollbar-button {
   width: calc(25% - 30px);
 }
+
+/* Call to Action */
+
+.call-to-action {
+  margin-block-start: 4rem;
+  padding-block-start: 1rem;
+  padding-block-end: 2rem;
+  background: var(--dark-blue-70);
+}
+
+.call-to-action .banner-wrapper {
+  padding-top: 10%;
+  position: relative;
+  max-width: 440px;
+  margin: auto;
+  overflow: hidden;
+  padding-inline: 10px;
+}
+
+.cta-banner-container {
+  position: relative;
+  margin-block-start: 20%;
+  bottom: -2rem;
+  min-width: 300px;
+  max-width: 440px;
+  height: 220px;
+  border-radius: 12rem 8rem;
+  background: var(--gradient);
+}
+
+.cta-banner-container .cta-banner {
+  bottom: 30px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.call-to-action .section-subtitle {
+  margin-block-start: 2rem;
+  text-transform: capitalize;
+}
+
+.call-to-action .section-title {
+  color: var(--white-1);
+  font-size: 2rem;
+  margin-block-end: 2rem;
+}
+
+.call-to-action .btn {
+  max-width: max-content;
+}
+
+/* Footer Menu */
+
+.footer-top {
+  background: var(--dark-blue-60);
+  color: var(--steel-blue);
+  padding-block-end: 7.5rem;
+}
+
+.footer-top .container {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer .footer-brand .logo {
+  color: var(--white-1);
+}
+
+.footer-text {
+  line-height: 1.6;
+  margin-block: 1rem;
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.schedule .span .footer-text .footer-item {
+  line-height: 1.6;
+}
+
+.footer-list-title {
+  color: var(--white-1);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block-end: 10px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-block: 10px;
+  transition: 0.25s ease;
+}
+
+.footer-link ion-icon {
+  color: var(--light-blue);
+  --ionicon-stroke-width: 70px;
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--white-1);
+}
+
+.schedule-icon,
+.footer-item .item-icon {
+  background: var(--gradient);
+  color: var(--white-1);
+  font-size: 1.1rem;
+  padding: 0.65rem;
+  border-radius: 50%;
+}
+
+.schedule .span,
+.footer-item .item-text {
+  line-height: 1.6;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-item:not(:first-child) {
+  margin-block-start: 1.25rem;
+}
+
+/* Footer Bottom */
