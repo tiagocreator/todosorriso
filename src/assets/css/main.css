@@ -572,3 +572,61 @@ h3 {
 }
 
 /* Footer Bottom */
+
+.footer-bottom {
+  background: var(--dark-blue-50);
+  padding-block: 3.1rem;
+  text-align: center;
+}
+
+.copyleft {
+  font-size: 0.9rem;
+  color: var(--white-1);
+  line-height: 1.6;
+  margin-block-end: 1.55rem;
+}
+
+.copyleft .github-link {
+  display: inline-block;
+}
+
+.footer-bottom .social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-media-list .social-link {
+  padding: 0.65rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white-1);
+  font-size: 1.1rem;
+  border-radius: 50%;
+}
+
+.social-media-list .social-link:is(:hover, :focus) {
+  background: var(--gradient);
+}
+
+/* Back To Top Btn */
+
+.back-to-top {
+  position: fixed;
+  bottom: 0.6rem;
+  right: 1.25rem;
+  font-size: 1.1rem;
+  background: var(--light-blue);
+  color: var(--white-1);
+  padding: 0.85rem;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.back-to-top.active {
+  transform: translateY(-10px);
+  visibility: visible;
+  opacity: 1;
+}

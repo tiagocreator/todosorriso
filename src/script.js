@@ -4,6 +4,7 @@ const navbar = document.querySelector('.navbar');
 const navbarLinks = document.querySelectorAll('.navbar-link');
 const navbarToggler = document.querySelector('.nav-toggle-btn');
 const headerBottom = document.querySelector('.header-bottom');
+const backToTopBtn = document.querySelector('.back-to-top');
 
 const toggleNavbar = () => {
   navbar.classList.toggle('active');
@@ -17,8 +18,13 @@ const closeNavbar = () => {
 
 navbarToggler.addEventListener('click', toggleNavbar);
 navbarLinks.forEach((link) => link.addEventListener('click', closeNavbar));
+
 window.addEventListener('scroll', () => {
-  window.scrollY > 100
-    ? headerBottom.classList.add('active')
-    : headerBottom.classList.remove('active');
+  if (window.scrollY > 100) {
+    headerBottom.classList.add('active');
+    backToTopBtn.classList.add('active');
+  } else {
+    headerBottom.classList.remove('active');
+    backToTopBtn.classList.remove('active');
+  }
 });
