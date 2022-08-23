@@ -184,8 +184,8 @@
             <li class="service-banner">
               <img
                 src="./src/assets/img/service-banner.webp"
-                width="409"
-                height="467"
+                width="383"
+                height="428"
                 loading="lazy"
                 alt=""
               />
@@ -429,15 +429,22 @@
         <div class="container">
           <div class="banner-wrapper">
             <div class="cta-banner-container">
-              <img
-                class="cta-banner"
-                src="./src/assets/img/call-to-action-banner.webp"
-                alt=""
-                srcset=""
-                width="463"
-                height="391"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  class="cta-banner"
+                  media="(min-width:768px)"
+                  srcset="./src/assets/img/call-to-action-banner-md.webp"
+                />
+                <img
+                  class="cta-banner"
+                  src="./src/assets/img/call-to-action-banner.webp"
+                  alt=""
+                  srcset=""
+                  width="463"
+                  height="391"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
 
@@ -513,7 +520,7 @@
           </ul>
 
           <ul class="footer-list">
-            <li><p class="footer-list-title">Nossos Serviços</p></li>
+            <li><p class="footer-list-title">Serviços</p></li>
             <li>
               <a href="#" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
