@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <title>Todo Sorriso - Clínica Odontológica</title>
     <script
       type="module"
@@ -28,7 +30,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
     />
   </head>
-  <body>
+  <body id="top">
     <header class="header">
       <div class="header-top">
         <div class="container">
@@ -72,14 +74,23 @@
       </div>
       <div class="header-bottom">
         <div class="container">
-          <a class="logo" href="#">Todo Sorriso</a>
+          <div class="logo-container">
+            <img
+              src="./src/assets/img/logo.webp"
+              alt="logo"
+              height="30"
+              width="30"
+            />
+            <a class="logo" href="#">Todo Sorriso</a>
+          </div>
+
           <nav class="navbar container">
             <ul class="navbar-list">
               <li><a href="#home" class="navbar-link">Início</a></li>
               <li><a href="#services" class="navbar-link">Serviços</a></li>
               <li><a href="#about" class="navbar-link">Sobre</a></li>
-              <li><a href="#blog" class="navbar-link">Blog</a></li>
-              <li><a href="#" class="navbar-link">Contato</a></li>
+              <li><a href="#team" class="navbar-link">Equipe</a></li>
+              <li><a href="#reviews" class="navbar-link">Reviews</a></li>
             </ul>
           </nav>
           <a href="#" class="btn">Agendar consulta</a>
@@ -91,8 +102,8 @@
       </div>
     </header>
 
-    <main id="top">
-      <section class="section hero">
+    <main>
+      <section id="home" class="section hero">
         <div class="container">
           <div class="hero-content">
             <p class="section-subtitle">Bem vindo a Todo Sorriso</p>
@@ -118,7 +129,7 @@
         </div>
       </section>
 
-      <section class="section service">
+      <section id="services" class="section service">
         <div class="container">
           <p class="section-subtitle text-center">Nossos Serviços</p>
           <h2 class="h2 section-title text-center">O que nós Oferecemos</h2>
@@ -252,7 +263,7 @@
         </div>
       </section>
 
-      <section class="section about">
+      <section id="about" class="section about">
         <div class="container">
           <img
             class="about-banner"
@@ -268,10 +279,6 @@
             <h2 class="h2 section-title">
               Contamos com diversos especialistas para cuidar da sua saúde bucal
             </h2>
-            <p class="section-text section-text-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio nulla ipsam eum nesciunt tenetur corrupti iste.
-            </p>
             <p class="section-text">
               Voluptates dolorem maiores harum cum ullam. Ab id architecto illum
               illo esse. Corrupti soluta, numquam animi, quo nesciunt cum iste,
@@ -282,7 +289,7 @@
         </div>
       </section>
 
-      <section class="section dentists">
+      <section id="team" class="section dentists">
         <div class="container">
           <p class="section-subtitle text-center">Nossos Profissionais</p>
           <h2 class="h2 section-title text-center">
@@ -481,32 +488,32 @@
           <ul class="footer-list">
             <li><p class="footer-list-title">Acesso</p></li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#home" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Inicio</span>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#services" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Serviços</span>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#about" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Sobre</span>
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">
+              <a href="#team" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Nossa Equipe</span>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#reviews" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Reviews</span>
               </a>
@@ -522,37 +529,37 @@
           <ul class="footer-list">
             <li><p class="footer-list-title">Serviços</p></li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#services" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Canal</span>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#services" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Limpeza (Profilaxia)</span>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#services" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Alinhamento</span>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#services" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Orientação Técnica</span>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-link">
+              <a href="#services" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Extração</span>
               </a>
             </li>
             <li>
-              <a href="" class="footer-link">
+              <a href="#services" class="footer-link">
                 <ion-icon name="add-outline"></ion-icon>
                 <span>Remoção de cáries </span>
               </a>

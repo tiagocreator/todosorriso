@@ -158,10 +158,18 @@ h3 {
   gap: 1.25rem;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--dark-blue-50);
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-left: 0.3rem;
 }
 
 .nav-toggle-btn {
@@ -323,15 +331,15 @@ h3 {
   margin-block-end: 2rem;
 }
 
-.about .section-text-1 {
-  margin-block: 1.55rem 1rem;
-}
-
 .about .btn {
   font-size: unset;
   max-width: max-content;
   margin-block-start: 2rem;
   padding-inline: 1rem;
+}
+
+.about .section-title {
+  margin-block-end: 2rem;
 }
 
 /* Dentists */
@@ -766,6 +774,14 @@ h3 {
     max-width: 900px;
   }
 
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-text {
+    font-size: 1.2rem;
+  }
+
   /* Header */
   .header-bottom {
     top: 3.67rem;
@@ -877,6 +893,10 @@ h3 {
     max-width: 520px;
   }
 
+  .hero-text {
+    font-size: 1.3rem;
+  }
+
   /* Services */
   .service-list {
     grid-template-columns: repeat(3, 1fr);
@@ -891,6 +911,10 @@ h3 {
 
   .service-list .service-banner img {
     width: 100%;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
   }
 
   /* About */
@@ -908,6 +932,10 @@ h3 {
   /* Dentists */
   .mobile-slider .slider-item {
     min-width: calc(33.33% - 1.25rem);
+  }
+
+  .dentists .card-subtitle {
+    font-size: 1.1rem;
   }
 
   /* Call to Action */
@@ -929,6 +957,10 @@ h3 {
   }
 
   /* Header */
+  .logo {
+    font-size: 2rem;
+  }
+
   .contact-list {
     gap: 2rem;
   }
