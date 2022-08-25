@@ -222,7 +222,7 @@ h3 {
   text-transform: uppercase;
   color: var(--jet);
   font-weight: 500;
-  padding: 1rem;
+  padding: 1rem 0.9rem;
 }
 
 /* Hero */
@@ -256,25 +256,68 @@ h3 {
   margin-block-end: 2.5rem;
 }
 
-.hero-form {
-  background: var(--white-1);
-  max-width: 95%;
-  padding: 1rem;
-  border-radius: 4px;
+.contact-buttons {
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
   box-shadow: var(--shadow-3);
 }
 
-.hero-form .email-field {
-  min-height: 4.35rem;
-  background: var(--white-2);
-  color: var(--black);
-  padding-inline: 1rem;
-  border-radius: 4px;
-  margin-block-end: 1rem;
+.hero .appointment-btn {
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 1.8rem;
 }
 
-.hero-form .btn {
+.choices-btn {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  background: var(--dark-blue-50);
+  color: var(--white-1);
+  position: absolute;
+  margin: auto;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.call-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-2);
+  color: var(--jet);
+  text-transform: uppercase;
+  padding-block: 1.8rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow-5);
+  margin-bottom: 1rem;
+}
+
+.call-btn:is(:hover, :focus) {
+  background: var(--white-1);
+  color: var(--light-blue);
+}
+
+.call-btn ion-icon {
+  color: var(--jet);
+  font-size: 3rem;
+  position: absolute;
+  left: 1rem;
 }
 
 /* Services */
@@ -735,6 +778,7 @@ h3 {
         rgba(255, 255, 255, 0.9) 70%
       ),
       url('../img/hero-background.webp') no-repeat center center scroll;
+    height: 700px;
   }
 
   /* Footer */
@@ -753,7 +797,7 @@ h3 {
   /* Hero */
   .hero {
     padding-block-start: 11rem;
-    height: 700px;
+    height: 750px;
     overflow: hidden;
     background: linear-gradient(
         -80deg,
@@ -767,23 +811,6 @@ h3 {
   .hero-content {
     margin-block-end: 0;
     max-width: 500px;
-  }
-
-  .hero-form {
-    position: relative;
-  }
-
-  .hero-form .email-field {
-    margin-block-end: 0;
-    padding-inline-end: 190px;
-  }
-
-  .hero-form .btn {
-    width: auto;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
   }
 
   /* Services */
@@ -907,7 +934,7 @@ h3 {
 
   .header-bottom .btn {
     display: block;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.1rem;
   }
 
   .header-bottom.active {
@@ -1064,6 +1091,10 @@ h3 {
     gap: 1rem;
   }
 
+  .navbar-link {
+    padding: 1rem 1rem;
+  }
+
   /* Hero */
   .hero {
     background: linear-gradient(
@@ -1077,6 +1108,35 @@ h3 {
 
   .hero-content {
     max-width: 540px;
+  }
+
+  .contact-buttons {
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+  }
+
+  .contact-buttons .call-btn {
+    margin-block-end: 0;
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 1rem;
+  }
+
+  .contact-buttons .choices-btn {
+    width: 5rem;
+    height: 5rem;
+    top: 0;
+  }
+
+  .contact-buttons .appointment-btn {
+    margin-block-end: 0;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 1rem;
   }
 
   /* About */
