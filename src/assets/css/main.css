@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: rgba(23, 162, 184, 0.3);
+}
+
 html {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
@@ -128,6 +132,7 @@ h3 {
   margin-block-end: 10px;
 }
 
+/* Header */
 .header-top,
 .header-bottom .btn {
   display: none;
@@ -221,7 +226,6 @@ h3 {
 }
 
 /* Hero */
-
 .hero {
   width: 100%;
   overflow: hidden;
@@ -274,7 +278,6 @@ h3 {
 }
 
 /* Services */
-
 .service {
   margin-block-end: 0;
 }
@@ -322,7 +325,6 @@ h3 {
 }
 
 /* About */
-
 .about .about-banner {
   width: 100%;
   background: var(--gradient) padding-box, var(--gradient) border-box;
@@ -339,11 +341,10 @@ h3 {
 }
 
 .about .section-title {
-  margin-block-end: 2rem;
+  margin-block-end: 1.8rem;
 }
 
 /* Dentists */
-
 .dentists .section-title {
   margin-block-end: 3.1rem;
 }
@@ -408,7 +409,6 @@ h3 {
 }
 
 /* Mobile slider */
-
 .mobile-slider {
   display: flex;
   gap: 1.8rem;
@@ -443,7 +443,6 @@ h3 {
 }
 
 /* Call to Action */
-
 .call-to-action {
   margin-block-start: 4rem;
   padding-block-start: 1rem;
@@ -486,7 +485,7 @@ h3 {
 
 .call-to-action .section-title {
   color: var(--white-1);
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-block-end: 2rem;
 }
 
@@ -494,8 +493,89 @@ h3 {
   max-width: max-content;
 }
 
-/* Footer Menu */
+/* Reviews */
+.reviews {
+  margin-block-end: 7.5rem;
+}
 
+.reviews .section-title {
+  margin-block-end: 3.1rem;
+}
+
+.reviews .review-info-content {
+  display: grid;
+  place-items: center;
+}
+
+.reviews-content {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews-content .review-card {
+  width: 100%;
+  padding: 1.55rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow-5);
+}
+
+.reviews-content .review-card p {
+  height: 3.85rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1.5rem;
+  font-size: 1rem;
+}
+
+.reviews-content .review-card .review-info-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.62rem;
+}
+
+.review-card .review-info .review-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--dark-blue-50);
+}
+
+.review-card .review-info .review-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light-blue);
+}
+.review-card .review-info .stars {
+  display: flex;
+  margin-top: 2px;
+}
+.review-card .review-info .stars ion-icon {
+  color: var(--bright-blue);
+}
+.review-card .review-info-content .image {
+  height: 4.68rem;
+  width: 4.68rem;
+  padding: 3px;
+  background: var(--bright-blue);
+  border-radius: 50%;
+}
+.review-info-content .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--white-1);
+}
+
+.review-card:hover .review-info-content .image img {
+  border-color: var(--white-1);
+}
+
+/* Footer Menu */
 .footer-top {
   background: var(--dark-blue-60);
   color: var(--steel-blue);
@@ -531,14 +611,14 @@ h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-block-end: 10px;
+  margin-block-end: 0.62rem;
 }
 
 .footer-link {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding-block: 10px;
+  padding-block: 0.62rem;
   transition: 0.25s ease;
 }
 
@@ -747,6 +827,12 @@ h3 {
     grid-row-start: 1;
   }
 
+  /* Reviews */
+  .reviews-content .review-card {
+    width: calc(50% - 0.62rem);
+    margin: 10px 0;
+  }
+
   /* Footer */
   .footer-bottom {
     padding-block: 30px;
@@ -915,7 +1001,7 @@ h3 {
   }
 
   .card-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   /* About */
@@ -1001,7 +1087,7 @@ h3 {
 
   /* Dentists */
   .dentists {
-    padding-block-end: 11.25rem;
+    padding-block-end: 3.1rem;
   }
 
   .dentists .slider-item {
@@ -1011,6 +1097,25 @@ h3 {
   .dentists .mobile-slider {
     padding-block-end: 0;
     margin-block-end: 0;
+  }
+
+  /* Reviews */
+  .reviews-content .review-card {
+    width: calc(33% - 0.62rem);
+  }
+
+  .reviews-content .review-card .quotes {
+    width: 1.95rem;
+    height: 1.95rem;
+  }
+
+  .review-card .review-info .review-title {
+    font-size: 1.25rem;
+  }
+
+  .reviews-content .review-card p {
+    font-size: 1.05rem;
+    height: 4rem;
   }
 }
 
