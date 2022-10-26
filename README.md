@@ -17,5 +17,5 @@
 #### :desktop_computer: Imagem do site desktop:
 ![todosorrido-desktop](https://user-images.githubusercontent.com/82607849/198020871-9de9dd66-88d2-481b-bb29-0ca514303152.jpg)  
   
-#### :iphone: Imagem so site mobile:
+#### :iphone: Imagem do site mobile:
 ![todosorriso-mobile](https://user-images.githubusercontent.com/82607849/198022305-3fb166c0-ce92-4703-adda-3a65eb14b9fd.jpg)
