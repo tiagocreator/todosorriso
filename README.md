@@ -1,6 +1,6 @@
 ## Todo Sorriso
 
-### [Live Website Peview](https://tiagocreator.github.io/todosorriso/)
+### [Live Website Peview](https://todosorriso.vercel.app/)
 
 ---
 
