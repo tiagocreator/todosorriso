@@ -1,6 +1,6 @@
 ## Todo Sorriso
 
-### [Live Website Peview](https://todosorriso.vercel.app/)
+### :computer: [Ver o Projeto](https://todosorriso.vercel.app/)
 
 ---
 
