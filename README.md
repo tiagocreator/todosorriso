@@ -1,6 +1,6 @@
 ## Todo Sorriso
 
-### :computer: [Ver o Projeto](https://todosorriso.vercel.app/)
+### :computer: [Link do Projeto](https://todosorriso.vercel.app/)
 
 ---
 
