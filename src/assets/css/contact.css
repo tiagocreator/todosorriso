@@ -1,0 +1,82 @@
+main {
+  margin: 6rem 0 3rem 0;
+}
+
+.contact-form h2 {
+  margin-block-end: 18px;
+}
+
+.form-content {
+  margin-block: 1rem;
+}
+
+.form-content input {
+  margin: 5px 0 15px 0;
+  border: 1px solid var(--dark-blue-70);
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.map-container {
+  margin-block: 50px 10px;
+}
+
+.map-container iframe {
+  height: 200px;
+}
+
+.address-container ion-icon {
+  display: inline-block;
+  margin-inline-end: 2px;
+}
+
+.sent-icon {
+  width: 90px;
+  margin: 50px auto auto auto;
+}
+
+/* Media Queries */
+
+/* SM Screens */
+@media (min-width: 575px) {
+  .map-container iframe {
+    height: 240px;
+  }
+}
+
+/* MD Screens */
+@media (min-width: 768px) {
+  .form-content input {
+    padding-block: 7px;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    display: flex;
+    gap: 0 40px;
+  }
+
+  main section {
+    flex: 1;
+  }
+
+  .map-container {
+    margin: 0;
+  }
+
+  .map-container iframe {
+    height: 347px;
+    margin-block-end: 15px;
+  }
+}
+
+/* LG Screens */
+@media (min-width: 1200px) {
+  main {
+    gap: 0 80px;
+  }
+  .map-container iframe {
+    height: 332px;
+  }
+}
