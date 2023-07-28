@@ -6,9 +6,6 @@
 
 #### Todo Sorriso é um site de clínica odontológica especializada, feito em HTML, CSS e JavaScript, sem o uso de frameworks. Site totalmente responsivo, com seção de apresentação de serviços, depoimentos de clientes e apresentação dos profissionais.
 
-### :warning: Projeto ainda em construção!
-##### Pretendo melhorar muito a acessibilidade e adicionar novas páginas.
-
 #### :heavy_check_mark: Score Lighthouse:  
 ![todosorriso-score](https://user-images.githubusercontent.com/82607849/198026544-5d1705ca-a740-4dbd-83c4-033e7ad7dc1d.jpg)
 
