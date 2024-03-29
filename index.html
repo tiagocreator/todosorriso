@@ -1,682 +1,590 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Todo Sorriso - Dentistas estéticos, remoção, limpeza, aparelhos. Clínica Odontológica Especializada. Agende já sua consulta!" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <title>Todo Sorriso - Clínica Odontológica</title>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="./src/assets/css/theme.css" />
-    <link rel="stylesheet" href="./src/assets/css/main.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" />
-  </head>
-  <body id="top">
-    <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <ul class="contact-list">
-            <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
-              <a class="contact-link" href="mailto:todosorriso@exemplo.com"
-                >todosorriso@exemplo.com</a
-              >
-            </li>
-            <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
-              <a class="contact-link" href="tel:+55123456789">+55 (12) 3456789</a>
-            </li>
-          </ul>
-          <ul class="social-list">
-            <li>
-              <a class="social-link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            </li>
-            <li>
-              <a class="social-link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            </li>
-            <li>
-              <a class="social-link" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-            </li>
-            <li>
-              <a class="social-link" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Todo Sorriso - Dentistas estéticos, remoção, limpeza, aparelhos. Clínica Odontológica Especializada. Agende já sua consulta!" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <title>Todo Sorriso - Clínica Odontológica</title>
+
+  <!-- icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- preload hero background image -->
+  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/img/hero-background.webp" type="image/webp">
+  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/img/hero-background-lg.webp" type="image/webp">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./src/assets/css/theme.min.css" />
+  <link rel="stylesheet" href="./src/assets/css/main.min.css" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" />
+</head>
+
+<body id="top">
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a class="contact-link" href="mailto:todosorriso@exemplo.com">todosorriso@exemplo.com</a>
+          </li>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a class="contact-link" href="tel:+55123456789">+55 (12) 3456789</a>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a class="social-link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </li>
+        </ul>
       </div>
-      <div class="header-bottom">
-        <div class="container">
-          <div class="logo-container">
-            <img src="./src/assets/img/logo.webp" alt="logo" height="30" width="30" />
-            <a class="logo" href="#">Todo Sorriso</a>
-          </div>
-
-          <nav class="navbar container">
-            <ul class="navbar-list">
-              <li><a href="#home" class="navbar-link">Início</a></li>
-              <li><a href="#services" class="navbar-link">Serviços</a></li>
-              <li><a href="#about" class="navbar-link">Sobre</a></li>
-              <li><a href="#team" class="navbar-link">Equipe</a></li>
-              <li><a href="#reviews" class="navbar-link">Reviews</a></li>
-            </ul>
-          </nav>
-          <a href="./contact.html" class="btn">Agendar consulta</a>
-          <button class="nav-toggle-btn">
-            <ion-icon name="menu-sharp" class="open-menu"></ion-icon>
-            <ion-icon name="close-sharp" class="close-menu"></ion-icon>
-          </button>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="logo-container">
+          <img src="./src/assets/img/logo.webp" alt="logo" height="30" width="30" />
+          <a class="logo" href="#">Todo Sorriso</a>
         </div>
+
+        <nav class="navbar container">
+          <ul class="navbar-list">
+            <li><a href="#home" class="navbar-link">Início</a></li>
+            <li><a href="#services" class="navbar-link">Serviços</a></li>
+            <li><a href="#about" class="navbar-link">Sobre</a></li>
+            <li><a href="#team" class="navbar-link">Equipe</a></li>
+            <li><a href="#reviews" class="navbar-link">Reviews</a></li>
+          </ul>
+        </nav>
+        <a href="./contact.html" class="btn">Agendar consulta</a>
+        <button class="nav-toggle-btn">
+          <ion-icon name="menu-sharp" class="open-menu"></ion-icon>
+          <ion-icon name="close-sharp" class="close-menu"></ion-icon>
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="home" class="section hero">
-        <div class="container">
-          <div class="hero-content">
-            <p class="section-subtitle">Bem vindo a Todo Sorriso</p>
-            <h1 class="h1 hero-title">Nós somos uma Clínica Odontológica Especializada</h1>
-            <p class="hero-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quaerat velit totam
-              cumque optio blanditiis iure beatae voluptate repudiandae eos.
-            </p>
-            <div class="contact-buttons">
-              <a class="call-btn" href="tel:+55123456789">+55 (12) 3456-789</a>
-              <span class="choices-btn">Ou</span>
-              <a href="./contact.html" class="btn appointment-btn">Agende uma consulta</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="section service">
-        <div class="container">
-          <p class="section-subtitle text-center">Nossos Serviços</p>
-          <h2 class="h2 section-title text-center">O que nós Oferecemos</h2>
-          <ul class="service-list">
-            <li>
-              <div class="service-card">
-                <div class="card-icon">
-                  <img
-                    src="./src/assets/img/service-1.png"
-                    alt=""
-                    class="service-icon"
-                    loading="lazy" />
-                </div>
-                <div>
-                  <h3 class="h3 card-title">Canal</h3>
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="service-card">
-                <div class="card-icon">
-                  <img
-                    src="./src/assets/img/service-2.png"
-                    alt=""
-                    class="service-icon"
-                    loading="lazy" />
-                </div>
-                <div>
-                  <h3 class="h3 card-title">Limpeza (Profilaxia)</h3>
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="service-card">
-                <div class="card-icon">
-                  <img
-                    src="./src/assets/img/service-3.png"
-                    alt=""
-                    class="service-icon"
-                    loading="lazy" />
-                </div>
-                <div>
-                  <h3 class="h3 card-title">Alinhamento</h3>
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="service-banner">
-              <img
-                src="./src/assets/img/service-banner.webp"
-                width="383"
-                height="428"
-                loading="lazy"
-                alt="" />
-            </li>
-
-            <li>
-              <div class="service-card">
-                <div class="card-icon">
-                  <img
-                    src="./src/assets/img/service-4.png"
-                    alt=""
-                    class="service-icon"
-                    loading="lazy" />
-                </div>
-                <div>
-                  <h3 class="h3 card-title">Orientação Técnica</h3>
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="service-card">
-                <div class="card-icon">
-                  <img
-                    src="./src/assets/img/service-5.png"
-                    alt=""
-                    class="service-icon"
-                    loading="lazy" />
-                </div>
-                <div>
-                  <h3 class="h3 card-title">Extração</h3>
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="service-card">
-                <div class="card-icon">
-                  <img
-                    src="./src/assets/img/service-6.png"
-                    alt=""
-                    class="service-icon"
-                    loading="lazy" />
-                </div>
-                <div>
-                  <h3 class="h3 card-title">Remoção de cáries</h3>
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="about" class="section about">
-        <div class="container">
-          <img
-            class="about-banner"
-            src="./src/assets/img/about-banner.webp"
-            alt="dentista na clinica atendendo uma paciente"
-            width="800"
-            height="550"
-            loading="lazy" />
-
-          <div class="about-content">
-            <p class="section-subtitle">Quem Somos</p>
-            <h2 class="h2 section-title">
-              Contamos com diversos especialistas para cuidar da sua saúde bucal
-            </h2>
-            <p class="section-text">
-              Voluptates dolorem maiores harum cum ullam. Ab id architecto illum illo esse. Corrupti
-              soluta, numquam animi, quo nesciunt cum iste, ipsa fugit suscipit laboriosam autem eos
-              dolore officia adipisci?
-            </p>
-            <a href="./contact.html" class="btn">Saber mais</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="team" class="section dentists">
-        <div class="container">
-          <p class="section-subtitle text-center">Nossos Profissionais</p>
-          <h2 class="h2 section-title text-center">Os Melhores Dentistas Especializados</h2>
-          <ul class="mobile-slider">
-            <li class="slider-item">
-              <div class="dentist-card">
-                <div class="card-banner img-holder">
-                  <img
-                    class="img-cover"
-                    src="./src/assets/img/dentist-1.webp"
-                    alt="Sophia Lira"
-                    width="460"
-                    height="500"
-                    loading="lazy" />
-                </div>
-                <h3 class="h3 card-title">Sophia Lira</h3>
-                <p class="card-subtitle">Odontopediatra</p>
-                <ul class="card-social-media">
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="slider-item">
-              <div class="dentist-card">
-                <div class="card-banner img-holder">
-                  <img
-                    class="img-cover"
-                    src="./src/assets/img/dentist-2.webp"
-                    alt="Samuel Barros"
-                    width="460"
-                    height="500"
-                    loading="lazy" />
-                </div>
-                <h3 class="h3 card-title">Samuel Barros</h3>
-                <p class="card-subtitle">Ortodontista</p>
-                <ul class="card-social-media">
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="slider-item">
-              <div class="dentist-card">
-                <div class="card-banner img-holder">
-                  <img
-                    class="img-cover"
-                    src="./src/assets/img/dentist-3.webp"
-                    alt="Maria Alice"
-                    width="460"
-                    height="500"
-                    loading="lazy" />
-                </div>
-                <h3 class="h3 card-title">Maria Alice</h3>
-                <p class="card-subtitle">Clínico Geral</p>
-                <ul class="card-social-media">
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="slider-item">
-              <div class="dentist-card">
-                <div class="card-banner img-holder">
-                  <img
-                    class="img-cover"
-                    src="./src/assets/img/dentist-4.webp"
-                    alt="José Valêncio"
-                    width="460"
-                    height="500"
-                    loading="lazy" />
-                </div>
-                <h3 class="h3 card-title">José Valêncio</h3>
-                <p class="card-subtitle">Endodontista</p>
-                <ul class="card-social-media">
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-media-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section call-to-action">
-        <div class="container">
-          <div class="banner-wrapper">
-            <div class="cta-banner-container">
-              <picture>
-                <source
-                  class="cta-banner"
-                  media="(min-width:768px)"
-                  srcset="./src/assets/img/call-to-action-banner-md.webp" />
-                <img
-                  class="cta-banner"
-                  src="./src/assets/img/call-to-action-banner.webp"
-                  alt=""
-                  srcset=""
-                  width="463"
-                  height="391"
-                  loading="lazy" />
-              </picture>
-            </div>
-          </div>
-
-          <div class="call-to-action-content">
-            <p class="section-subtitle">Agende já uma consulta</p>
-            <h2 class="h2 section-title">Saiba mais sobre nossos planos e preços</h2>
-            <a href="./contact.html" class="btn">Agendar consulta</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="reviews" class="section reviews">
-        <div class="container">
-          <h2 class="h2 section-title text-center">Depoimentos</h2>
-          <div class="reviews-content">
-            <div class="review-card">
-              <img
-                class="quotes"
-                src="./src/assets/img/quotes.webp"
-                alt=""
-                width="21"
-                height="21" />
-              <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits.</p>
-              <div class="review-info-content">
-                <div class="review-info">
-                  <div class="review-title">Suele Rodrigues</div>
-                  <div class="review-subtitle">Muito Satisfeita</div>
-                  <div class="stars">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-half"></ion-icon>
-                  </div>
-                </div>
-                <div class="image">
-                  <img
-                    src="./src/assets/img/pacient-1.webp"
-                    alt="pacient"
-                    width="200"
-                    height="200"
-                    loading="lazy" />
-                </div>
-              </div>
-            </div>
-            <div class="review-card">
-              <img
-                class="quotes"
-                src="./src/assets/img/quotes.webp"
-                alt=""
-                width="21"
-                height="21" />
-              <p>
-                Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae
-                deleniti ideas fuga molestiae, alias.
-              </p>
-              <div class="review-info-content">
-                <div class="review-info">
-                  <div class="review-title">Cristiano Dantas</div>
-                  <div class="review-subtitle">Muito Satisfeito</div>
-                  <div class="stars">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-                <div class="image">
-                  <img
-                    src="./src/assets/img/pacient-3.webp"
-                    alt="pacient"
-                    width="200"
-                    height="200"
-                    loading="lazy" />
-                </div>
-              </div>
-            </div>
-            <div class="review-card">
-              <img
-                class="quotes"
-                src="./src/assets/img/quotes.webp"
-                alt=""
-                width="21"
-                height="21" />
-              <p>Quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-              <div class="review-info-content">
-                <div class="review-info">
-                  <div class="review-title">Cristina Bela</div>
-                  <div class="review-subtitle">Muito Safisfeita</div>
-                  <div class="stars">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-half"></ion-icon>
-                  </div>
-                </div>
-                <div class="image">
-                  <img
-                    src="./src/assets/img/pacient-2.webp"
-                    alt="pacient"
-                    width="200"
-                    height="200"
-                    loading="lazy" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="section footer-top">
-        <div class="container">
-          <div class="footer-brand">
-            <a class="logo" href="#">Todo Sorriso</a>
-            <a href="#" class="footer-text"
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eius, ad possimus
-              animi fugit libero commodi.</a
-            >
-            <div class="schedule">
-              <div class="schedule-icon">
-                <ion-icon name="time-outline"></ion-icon>
-              </div>
-              <span class="span"> Segunda - Sexta:<br />08:00 AM - 18:00 PM </span>
-            </div>
-          </div>
-
-          <ul class="footer-list">
-            <li><p class="footer-list-title">Acesso</p></li>
-            <li>
-              <a href="#home" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Inicio</span>
-              </a>
-            </li>
-            <li>
-              <a href="#services" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Serviços</span>
-              </a>
-            </li>
-            <li>
-              <a href="#about" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Sobre</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#team" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Nossa Equipe</span>
-              </a>
-            </li>
-            <li>
-              <a href="#reviews" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Reviews</span>
-              </a>
-            </li>
-            <li>
-              <a href="./contact.html" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Contato</span>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li><p class="footer-list-title">Serviços</p></li>
-            <li>
-              <a href="#services" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Canal</span>
-              </a>
-            </li>
-            <li>
-              <a href="#services" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Limpeza (Profilaxia)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#services" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Alinhamento</span>
-              </a>
-            </li>
-            <li>
-              <a href="#services" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Orientação Técnica</span>
-              </a>
-            </li>
-            <li>
-              <a href="#services" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Extração</span>
-              </a>
-            </li>
-            <li>
-              <a href="#services" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Remoção de cáries </span>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Entre em Contato</p>
-            </li>
-
-            <li class="footer-item">
-              <div class="item-icon">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-              <address class="item-text">
-                Rua Lorem, N123, bairro Exemplo<br />
-                Estado, País
-              </address>
-            </li>
-
-            <li class="footer-item">
-              <div class="item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-              <a class="footer-link" href="tel:+55123456789">+55 (12) 3456789</a>
-            </li>
-
-            <li class="footer-item">
-              <div class="item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-              <a class="footer-link" href="mailto:todosorriso@exemplo.com"
-                >todosorriso@exemplo.com</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="copyleft">
-            MIT License, made by
-            <a
-              class="github-link"
-              href="https://github.com/tiagocreator"
-              target="_blank"
-              rel="noreferrer">
-              Tiago Leite</a
-            >
+  <main>
+    <section id="home" class="section hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="section-subtitle">Bem vindo a Todo Sorriso</p>
+          <h1 class="h1 hero-title">Nós somos uma Clínica Odontológica Especializada</h1>
+          <p class="hero-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quaerat velit totam
+            cumque optio blanditiis iure beatae voluptate repudiandae eos.
           </p>
-          <ul class="social-media-list">
-            <li>
-              <a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
-            </li>
-          </ul>
+          <div class="contact-buttons">
+            <a class="call-btn" href="tel:+55123456789">+55 (12) 3456-789</a>
+            <span class="choices-btn">Ou</span>
+            <a href="./contact.html" class="btn appointment-btn">Agende uma consulta</a>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <a class="back-to-top active" href="#top"><ion-icon name="caret-up"></ion-icon></a>
-    <script src="./src/script.js"></script>
-  </body>
+    <section id="services" class="section service">
+      <div class="container">
+        <p class="section-subtitle text-center">Nossos Serviços</p>
+        <h2 class="h2 section-title text-center">O que nós Oferecemos</h2>
+        <ul class="service-list">
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img src="./src/assets/img/service-1.png" alt="" class="service-icon" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="h3 card-title">Canal</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img src="./src/assets/img/service-2.png" alt="" class="service-icon" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="h3 card-title">Limpeza (Profilaxia)</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img src="./src/assets/img/service-3.png" alt="" class="service-icon" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="h3 card-title">Alinhamento</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="service-banner">
+            <img src="./src/assets/img/service-banner.webp" width="383" height="428" loading="lazy" alt="" />
+          </li>
+
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img src="./src/assets/img/service-4.png" alt="" class="service-icon" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="h3 card-title">Orientação Técnica</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img src="./src/assets/img/service-5.png" alt="" class="service-icon" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="h3 card-title">Extração</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img src="./src/assets/img/service-6.png" alt="" class="service-icon" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="h3 card-title">Remoção de cáries</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, omnis.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <img class="about-banner" src="./src/assets/img/about-banner.webp"
+          alt="dentista na clinica atendendo uma paciente" width="800" height="550" loading="lazy" />
+
+        <div class="about-content">
+          <p class="section-subtitle">Quem Somos</p>
+          <h2 class="h2 section-title">
+            Contamos com diversos especialistas para cuidar da sua saúde bucal
+          </h2>
+          <p class="section-text">
+            Voluptates dolorem maiores harum cum ullam. Ab id architecto illum illo esse. Corrupti
+            soluta, numquam animi, quo nesciunt cum iste, ipsa fugit suscipit laboriosam autem eos
+            dolore officia adipisci?
+          </p>
+          <a href="./contact.html" class="btn">Saber mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section dentists">
+      <div class="container">
+        <p class="section-subtitle text-center">Nossos Profissionais</p>
+        <h2 class="h2 section-title text-center">Os Melhores Dentistas Especializados</h2>
+        <ul class="mobile-slider">
+          <li class="slider-item">
+            <div class="dentist-card">
+              <div class="card-banner img-holder">
+                <img class="img-cover" src="./src/assets/img/dentist-1.webp" alt="Sophia Lira" width="460" height="500"
+                  loading="lazy" />
+              </div>
+              <h3 class="h3 card-title">Sophia Lira</h3>
+              <p class="card-subtitle">Odontopediatra</p>
+              <ul class="card-social-media">
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="dentist-card">
+              <div class="card-banner img-holder">
+                <img class="img-cover" src="./src/assets/img/dentist-2.webp" alt="Samuel Barros" width="460"
+                  height="500" loading="lazy" />
+              </div>
+              <h3 class="h3 card-title">Samuel Barros</h3>
+              <p class="card-subtitle">Ortodontista</p>
+              <ul class="card-social-media">
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="dentist-card">
+              <div class="card-banner img-holder">
+                <img class="img-cover" src="./src/assets/img/dentist-3.webp" alt="Maria Alice" width="460" height="500"
+                  loading="lazy" />
+              </div>
+              <h3 class="h3 card-title">Maria Alice</h3>
+              <p class="card-subtitle">Clínico Geral</p>
+              <ul class="card-social-media">
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="dentist-card">
+              <div class="card-banner img-holder">
+                <img class="img-cover" src="./src/assets/img/dentist-4.webp" alt="José Valêncio" width="460"
+                  height="500" loading="lazy" />
+              </div>
+              <h3 class="h3 card-title">José Valêncio</h3>
+              <p class="card-subtitle">Endodontista</p>
+              <ul class="card-social-media">
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-media-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section call-to-action">
+      <div class="container">
+        <div class="banner-wrapper">
+          <div class="cta-banner-container">
+            <picture>
+              <source class="cta-banner" media="(min-width:768px)"
+                srcset="./src/assets/img/call-to-action-banner-md.webp" />
+              <img class="cta-banner" src="./src/assets/img/call-to-action-banner.webp" alt="" srcset="" width="463"
+                height="391" loading="lazy" />
+            </picture>
+          </div>
+        </div>
+
+        <div class="call-to-action-content">
+          <p class="section-subtitle">Agende já uma consulta</p>
+          <h2 class="h2 section-title">Saiba mais sobre nossos planos e preços</h2>
+          <a href="./contact.html" class="btn">Agendar consulta</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews">
+      <div class="container">
+        <h2 class="h2 section-title text-center">Depoimentos</h2>
+        <div class="reviews-content">
+          <div class="review-card">
+            <img class="quotes" src="./src/assets/img/quotes.webp" alt="" width="21" height="21" />
+            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits.</p>
+            <div class="review-info-content">
+              <div class="review-info">
+                <div class="review-title">Suele Rodrigues</div>
+                <div class="review-subtitle">Muito Satisfeita</div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+              </div>
+              <div class="image">
+                <img src="./src/assets/img/pacient-1.webp" alt="pacient" width="200" height="200" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <img class="quotes" src="./src/assets/img/quotes.webp" alt="" width="21" height="21" />
+            <p>
+              Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae
+              deleniti ideas fuga molestiae, alias.
+            </p>
+            <div class="review-info-content">
+              <div class="review-info">
+                <div class="review-title">Cristiano Dantas</div>
+                <div class="review-subtitle">Muito Satisfeito</div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <div class="image">
+                <img src="./src/assets/img/pacient-3.webp" alt="pacient" width="200" height="200" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <img class="quotes" src="./src/assets/img/quotes.webp" alt="" width="21" height="21" />
+            <p>Quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+            <div class="review-info-content">
+              <div class="review-info">
+                <div class="review-title">Cristina Bela</div>
+                <div class="review-subtitle">Muito Safisfeita</div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+              </div>
+              <div class="image">
+                <img src="./src/assets/img/pacient-2.webp" alt="pacient" width="200" height="200" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a class="logo" href="#">Todo Sorriso</a>
+          <a href="#" class="footer-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eius, ad
+            possimus
+            animi fugit libero commodi.</a>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span"> Segunda - Sexta:<br />08:00 AM - 18:00 PM </span>
+          </div>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Acesso</p>
+          </li>
+          <li>
+            <a href="#home" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Serviços</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Sobre</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#team" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Nossa Equipe</span>
+            </a>
+          </li>
+          <li>
+            <a href="#reviews" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Reviews</span>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Contato</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Serviços</p>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Canal</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Limpeza (Profilaxia)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Alinhamento</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Orientação Técnica</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Extração</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Remoção de cáries </span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Entre em Contato</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <address class="item-text">
+              Rua Lorem, N123, bairro Exemplo<br />
+              Estado, País
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a class="footer-link" href="tel:+55123456789">+55 (12) 3456789</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a class="footer-link" href="mailto:todosorriso@exemplo.com">todosorriso@exemplo.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyleft">
+          MIT License, made by
+          <a class="github-link" href="https://github.com/tiagocreator" target="_blank" rel="noreferrer">
+            Tiago Leite</a>
+        </p>
+        <ul class="social-media-list">
+          <li>
+            <a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a class="back-to-top active" href="#top"><ion-icon name="caret-up"></ion-icon></a>
+  <script src="./src/navbar.js"></script>
+</body>
+
 </html>
