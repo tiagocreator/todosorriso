@@ -6,8 +6,12 @@
 
 #### Todo Sorriso é um site de clínica odontológica especializada, feito em HTML, CSS e JavaScript, sem o uso de frameworks. Site totalmente responsivo, com seção de apresentação de serviços, depoimentos de clientes e apresentação dos profissionais.
 
-#### :heavy_check_mark: Score Lighthouse:  
-![todosorriso-score](https://user-images.githubusercontent.com/82607849/198026544-5d1705ca-a740-4dbd-83c4-033e7ad7dc1d.jpg)
+### :green_circle: Google Lighthouse - Mobile
+
+![lighthouse_performance](https://github.com/tiagocreator/todosorriso/assets/82607849/4ef8b2c5-58ca-4544-ad6e-c871e3dd5f36)
+![lighthouse_accessibility](https://github.com/tiagocreator/todosorriso/assets/82607849/66f23d85-4f90-4b7d-991d-fba5b71803fa)
+![lighthouse_seo](https://github.com/tiagocreator/todosorriso/assets/82607849/1e67b842-cf66-4ac5-af3d-0bf3e60eafa4)
+![lighthouse_best-practices](https://github.com/tiagocreator/todosorriso/assets/82607849/d499db8b-1f6c-4a6c-a367-cf5b8177cb3b)
 
 ---
 
