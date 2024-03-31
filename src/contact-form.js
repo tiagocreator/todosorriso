@@ -7,7 +7,6 @@ const formContent = document.querySelector('.form-content');
 const sendFormBtn = document.querySelector('.send-form');
 const sentIcon = '../src/assets/img/sent.png';
 
-console.log(form);
 const submitForm = (e) => {
   e.preventDefault();
   formText.style.display = 'none';

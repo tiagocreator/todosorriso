@@ -67,7 +67,9 @@
     <div class="header-bottom">
       <div class="container">
         <div class="logo-container">
-          <img src="./src/assets/img/logo.webp" alt="logo" height="30" width="30" />
+          <img src="./src/assets/img/logo-30-30.webp"
+            srcset="./src/assets/img/logo-30-30.webp 1x, ./src/assets/img/logo-45-45.webp 1.5x" alt="logo" height="30"
+            width="30">
           <a class="logo" href="#">Todo Sorriso</a>
         </div>
 
@@ -153,7 +155,12 @@
           </li>
 
           <li class="service-banner">
-            <img src="./src/assets/img/service-banner.webp" width="383" height="428" loading="lazy" alt="" />
+            <picture>
+              <!-- Medium -->
+              <source media="(max-width: 1200px)" srcset="./src/assets/img/service-banner-m.webp">
+              <!-- Large -->
+              <img src="./src/assets/img/service-banner-lg.webp" width="329" height="368" loading="lazy" alt="" />
+            </picture>
           </li>
 
           <li>
@@ -201,8 +208,19 @@
 
     <section id="about" class="section about">
       <div class="container">
-        <img class="about-banner" src="./src/assets/img/about-banner.webp"
-          alt="dentista na clinica atendendo uma paciente" width="800" height="550" loading="lazy" />
+        <picture>
+          <!-- Mobile -->
+          <source media="(max-width: 575px)" srcset="./src/assets/img/about-banner-s.webp">
+          <!-- Small Tablet -->
+          <source media="(max-width: 768px)" srcset="./src/assets/img/about-banner-l.webp">
+          <!-- Tablet -->
+          <source media="(max-width: 992px)" srcset="./src/assets/img/about-banner-xl.webp">
+          <!-- Desktop -->
+          <source media="(min-width: 992px)" srcset="./src/assets/img/about-banner-m.webp">
+          <!-- Fallback image -->
+          <img src="./src/assets/img/about-banner.webp" class="about-banner"
+            alt="dentista na clinica atendendo uma paciente" width="702" height="595.22">
+        </picture>
 
         <div class="about-content">
           <p class="section-subtitle">Quem Somos</p>
@@ -227,8 +245,19 @@
           <li class="slider-item">
             <div class="dentist-card">
               <div class="card-banner img-holder">
-                <img class="img-cover" src="./src/assets/img/dentist-1.webp" alt="Sophia Lira" width="460" height="500"
-                  loading="lazy" />
+                <picture>
+                  <!-- Small -->
+                  <source media="(max-width: 575px)" srcset="./src/assets/img/dentist-1-s.webp">
+                  <!-- Medium -->
+                  <source media="(max-width: 768px)" srcset="./src/assets/img/dentist-1-m.webp">
+                  <!-- Large -->
+                  <source media="(max-width: 992px)" srcset="./src/assets/img/dentist-1-l.webp">
+                  <!-- Desktop -->
+                  <source media="(min-width: 992px)" srcset="./src/assets/img/dentist-1-xl.webp">
+                  <!-- Fallback image -->
+                  <img class="img-cover" src="./src/assets/img/dentist-1-m.webp" width="394" height="428" loading="lazy"
+                    alt="Sophia Lira" />
+                </picture>
               </div>
               <h3 class="h3 card-title">Sophia Lira</h3>
               <p class="card-subtitle">Odontopediatra</p>
@@ -254,8 +283,19 @@
           <li class="slider-item">
             <div class="dentist-card">
               <div class="card-banner img-holder">
-                <img class="img-cover" src="./src/assets/img/dentist-2.webp" alt="Samuel Barros" width="460"
-                  height="500" loading="lazy" />
+                <picture>
+                  <!-- Small -->
+                  <source media="(max-width: 575px)" srcset="./src/assets/img/dentist-2-s.webp">
+                  <!-- Medium -->
+                  <source media="(max-width: 768px)" srcset="./src/assets/img/dentist-2-m.webp">
+                  <!-- Large -->
+                  <source media="(max-width: 992px)" srcset="./src/assets/img/dentist-2-l.webp">
+                  <!-- Desktop -->
+                  <source media="(min-width: 992px)" srcset="./src/assets/img/dentist-2-xl.webp">
+                  <!-- Fallback image -->
+                  <img class="img-cover" src="./src/assets/img/dentist-2-m.webp" width="394" height="428" loading="lazy"
+                    alt="Samuel Barros" />
+                </picture>
               </div>
               <h3 class="h3 card-title">Samuel Barros</h3>
               <p class="card-subtitle">Ortodontista</p>
@@ -281,8 +321,19 @@
           <li class="slider-item">
             <div class="dentist-card">
               <div class="card-banner img-holder">
-                <img class="img-cover" src="./src/assets/img/dentist-3.webp" alt="Maria Alice" width="460" height="500"
-                  loading="lazy" />
+                <picture>
+                  <!-- Small -->
+                  <source media="(max-width: 575px)" srcset="./src/assets/img/dentist-3-s.webp">
+                  <!-- Medium -->
+                  <source media="(max-width: 768px)" srcset="./src/assets/img/dentist-3-m.webp">
+                  <!-- Large -->
+                  <source media="(max-width: 992px)" srcset="./src/assets/img/dentist-3-l.webp">
+                  <!-- Desktop -->
+                  <source media="(min-width: 992px)" srcset="./src/assets/img/dentist-3-xl.webp">
+                  <!-- Fallback image -->
+                  <img class="img-cover" src="./src/assets/img/dentist-3-m.webp" width="394" height="428" loading="lazy"
+                    alt="Maria Alice" />
+                </picture>
               </div>
               <h3 class="h3 card-title">Maria Alice</h3>
               <p class="card-subtitle">Clínico Geral</p>
@@ -308,8 +359,19 @@
           <li class="slider-item">
             <div class="dentist-card">
               <div class="card-banner img-holder">
-                <img class="img-cover" src="./src/assets/img/dentist-4.webp" alt="José Valêncio" width="460"
-                  height="500" loading="lazy" />
+                <picture>
+                  <!-- Small -->
+                  <source media="(max-width: 575px)" srcset="./src/assets/img/dentist-4-s.webp">
+                  <!-- Medium -->
+                  <source media="(max-width: 768px)" srcset="./src/assets/img/dentist-4-m.webp">
+                  <!-- Large -->
+                  <source media="(max-width: 992px)" srcset="./src/assets/img/dentist-4-l.webp">
+                  <!-- Desktop -->
+                  <source media="(min-width: 992px)" srcset="./src/assets/img/dentist-4-xl.webp">
+                  <!-- Fallback image -->
+                  <img class="img-cover" src="./src/assets/img/dentist-4-m.webp" width="394" height="428" loading="lazy"
+                    alt="José Valêncio" />
+                </picture>
               </div>
               <h3 class="h3 card-title">José Valêncio</h3>
               <p class="card-subtitle">Endodontista</p>
@@ -377,7 +439,7 @@
                 </div>
               </div>
               <div class="image">
-                <img src="./src/assets/img/pacient-1.webp" alt="pacient" width="200" height="200" loading="lazy" />
+                <img src="./src/assets/img/pacient-1.webp" alt="pacient" width="69" height="69" loading="lazy" />
               </div>
             </div>
           </div>
@@ -400,7 +462,7 @@
                 </div>
               </div>
               <div class="image">
-                <img src="./src/assets/img/pacient-3.webp" alt="pacient" width="200" height="200" loading="lazy" />
+                <img src="./src/assets/img/pacient-3.webp" alt="pacient" width="69" height="69" loading="lazy" />
               </div>
             </div>
           </div>
@@ -420,7 +482,7 @@
                 </div>
               </div>
               <div class="image">
-                <img src="./src/assets/img/pacient-2.webp" alt="pacient" width="200" height="200" loading="lazy" />
+                <img src="./src/assets/img/pacient-2.webp" alt="pacient" width="69" height="69" loading="lazy" />
               </div>
             </div>
           </div>
