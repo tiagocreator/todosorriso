@@ -12,8 +12,8 @@
   <title>Todo Sorriso - Clínica Odontológica</title>
 
   <!-- icons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" async></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" async></script>
 
   <!-- preload hero background image -->
   <link rel="preload" fetchpriority="high" as="image" href="./src/assets/img/hero-background.webp" type="image/webp">
@@ -159,7 +159,8 @@
               <!-- Medium -->
               <source media="(max-width: 1200px)" srcset="./src/assets/img/service-banner-m.webp">
               <!-- Large -->
-              <img src="./src/assets/img/service-banner-lg.webp" width="329" height="368" loading="lazy" alt="" />
+              <source media="(min-width: 1200px)" srcset="./src/assets/img/service-banner-lg.webp">
+              <img src="./src/assets/img/service-banner-m.webp" width="220" height="246" loading="lazy" alt="" />
             </picture>
           </li>
 
@@ -218,8 +219,8 @@
           <!-- Desktop -->
           <source media="(min-width: 992px)" srcset="./src/assets/img/about-banner-m.webp">
           <!-- Fallback image -->
-          <img src="./src/assets/img/about-banner.webp" class="about-banner"
-            alt="dentista na clinica atendendo uma paciente" width="702" height="595.22">
+          <img src="./src/assets/img/about-banner-s.webp" class="about-banner"
+            alt="dentista na clinica atendendo uma paciente" width="312" height="264">
         </picture>
 
         <div class="about-content">
